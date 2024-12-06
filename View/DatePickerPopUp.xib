@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatePickerPopUp" customModule="WeddingBooking" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonCancel" destination="mop-qv-HX6" id="WN0-rg-94e"/>
+                <outlet property="buttonDone" destination="h2y-aa-pCK" id="Mjb-2Q-Rd0"/>
+                <outlet property="datePickerView" destination="jj3-3a-gzI" id="Irv-au-7BM"/>
+                <outlet property="popupView" destination="xYD-xN-Hw1" id="hzQ-QM-ipy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DatePickerPopUp" customModule="WeddingBooking" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xYD-xN-Hw1">
+                    <rect key="frame" x="0.0" y="558" width="393" height="260"/>
+                    <subviews>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="jj3-3a-gzI">
+                            <rect key="frame" x="0.0" y="43" width="393" height="216"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="highlightsToday" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="highlightsToday" value="NO"/>
+                            </userDefinedRuntimeAttributes>
+                        </datePicker>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2y-aa-pCK">
+                            <rect key="frame" x="270" y="5" width="118" height="33"/>
+                            <color key="backgroundColor" red="0.396078431372549" green="0.74509803921568629" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="cornerRadius" value="5"/>
+                            </userDefinedRuntimeAttributes>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            </variation>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mop-qv-HX6">
+                            <rect key="frame" x="5" y="5" width="118" height="33"/>
+                            <color key="backgroundColor" red="0.396078431372549" green="0.74509803921568629" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="cornerRadius" value="5"/>
+                            </userDefinedRuntimeAttributes>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            </variation>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="260" id="IK4-s0-Z5y">
+                            <variation key="heightClass=regular-widthClass=regular" constant="320"/>
+                        </constraint>
+                        <constraint firstItem="h2y-aa-pCK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xYD-xN-Hw1" secondAttribute="leading" constant="20" symbolic="YES" id="Nz8-ho-h5w"/>
+                        <constraint firstAttribute="bottom" secondItem="jj3-3a-gzI" secondAttribute="bottom" constant="1" id="PbQ-V3-rPo"/>
+                        <constraint firstItem="jj3-3a-gzI" firstAttribute="width" secondItem="xYD-xN-Hw1" secondAttribute="width" id="Pwr-Cu-3f0"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mop-qv-HX6" secondAttribute="trailing" constant="20" symbolic="YES" id="VKb-su-kfq"/>
+                        <constraint firstItem="h2y-aa-pCK" firstAttribute="width" secondItem="xYD-xN-Hw1" secondAttribute="width" multiplier="0.3" id="ZS3-0z-wfz"/>
+                        <constraint firstItem="mop-qv-HX6" firstAttribute="width" secondItem="xYD-xN-Hw1" secondAttribute="width" multiplier="0.3" id="aTh-Fj-vhb"/>
+                        <constraint firstAttribute="trailing" secondItem="h2y-aa-pCK" secondAttribute="trailing" constant="5" id="bl5-bT-QkP"/>
+                        <constraint firstItem="jj3-3a-gzI" firstAttribute="centerX" secondItem="xYD-xN-Hw1" secondAttribute="centerX" id="duO-Eo-FFD"/>
+                        <constraint firstItem="mop-qv-HX6" firstAttribute="top" secondItem="xYD-xN-Hw1" secondAttribute="top" constant="5" id="fc4-sw-HRX"/>
+                        <constraint firstItem="h2y-aa-pCK" firstAttribute="top" secondItem="xYD-xN-Hw1" secondAttribute="top" constant="5" id="pzD-uX-iVw"/>
+                        <constraint firstItem="mop-qv-HX6" firstAttribute="leading" secondItem="xYD-xN-Hw1" secondAttribute="leading" constant="5" id="sSz-LO-HfP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xYD-xN-Hw1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0yv-UC-3pB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="xYD-xN-Hw1" secondAttribute="bottom" id="3dM-pn-MVJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xYD-xN-Hw1" secondAttribute="trailing" id="nT7-2r-90N"/>
+            </constraints>
+            <point key="canvasLocation" x="59" y="20"/>
+        </view>
+    </objects>
+</document>
